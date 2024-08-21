@@ -373,7 +373,7 @@ main .container > *:not(.main-img) {
 
 .metodos-box .box {
     width: 450px; 
-    height: 293px;
+    height: 300px;
     padding: 20px 30px 40px 30px;
     background-color: #ececec;
     border-radius: 10px;
