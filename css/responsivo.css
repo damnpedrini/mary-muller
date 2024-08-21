@@ -6,6 +6,7 @@
     .menu-icon {
         display: block;
         right: 20px;
+        cursor: pointer;
     }
 
     .menu-icon img{
