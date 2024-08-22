@@ -11,6 +11,7 @@
 
     .menu-icon img{
         width: 40px;
+        filter: invert(69%) sepia(74%) saturate(647%) hue-rotate(333deg) brightness(130%) contrast(100%);     
     }
 
     header .logo img {
@@ -46,18 +47,17 @@
     /*css main principal*/
     main .container{
         flex-direction: column;
-        justify-content: center;
         align-items: center;
         padding: 0 10px;
         min-height: 90vh;
     }
 
     main .container > *:not(.main-img) {
-        align-self:auto;
+        align-self:none;
     }
 
     .main-text{
-        margin-top: 8%;
+        margin-top: 36%;
         margin-left: 0px;
         width: 100%;
         text-align: center;
@@ -89,8 +89,7 @@
     }
     
     .main-text div a{
-        width: 80%;
-        padding: 30px;
+            display: none;
     }
 
     .main-text div a p {
@@ -102,29 +101,61 @@
     }
 
     .main-horario{
-        width: 70%;
+        width: 100%;
+        height: 20%;
         margin-right: 0px;
         margin-bottom: 0px;
         text-align: center;
         margin-bottom: 20%;
+        display: flex;
     }
 
     .main-horario .horario-fundo {
-        width: 100%;
+        width: 90%;
         background-color: #3a5d548e;
         padding: 10px;
+        bottom: 0;
+        text-align: left;
+        margin-right: 10px;
     }
 
     .main-horario h2 {
         margin-top: 10px;
         font-size: 20px;
-        font-weight: 800;
+        font-weight: 600;
     }
 
     .main-horario p{
         margin: 10px 0 10px 0;
-        font-size: 24px;
+        font-size: 18px;
         font-weight: 400;
+    }
+
+    .botao-fundo{
+        width: 30%;
+        margin-top: auto; 
+        padding: 0;
+        display: block;
+    }
+    
+    .botao-fundo button{
+        top: 10px;
+        width: 90px;
+        height: 60px;
+        background-color: #dd77337c;
+        padding: 0px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+    
+    .main-horario button:hover{
+        transform: scale(1.1);
+    }
+    
+    .main-horario button svg{
+        width: 60%;
     }
 
     .main-img{
@@ -156,7 +187,7 @@
 
     .servicos-text h2{
         font-size: 26px;
-        font-weight: 400;
+        font-weight: 600;
     }
 
     .tipos-servicos{
@@ -168,16 +199,40 @@
     }
 
     .servicos-text button{
-        margin-top: 30px;
-        width: 90%;
+        display: none;
     }
 
     .servicos-img{
+        display: none;
+    }
+
+    .servicos-img-responsivo{
+        width: 100%;
+        display: block;
+    }
+
+    .servicos-img-responsivo img{
         width: 100%;
     }
 
-    .servicos-img img{
-        width: 90%;
+    .servicos-responsivo{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .servicos-responsivo button{
+        width: 100%;
+        height: 64px;
+        margin-top: 20px;
+        background-color: #dbeee9;
+        padding: 16px 0px;
+        border: none;
+        border-radius: 10px;
+        text-align: center;
+        justify-content: center;
+        transition: transform 0.3s ease;
+        cursor: pointer;
     }
 
     /*css metodos*/
@@ -194,8 +249,12 @@
 
     .metodos-text .metodos-display h2 {
         font-family: Poppins;
-        font-size: 26px;
-        font-weight: 400;
+        font-size: 28px;
+        font-weight: 600;
+    }
+
+    .metodos-text .metodos-display a b{
+        display: none;
     }
 
     .metodos-text p {
@@ -286,6 +345,11 @@
         padding: 0 4% 0 5%;
     }
 
+    .testemunhos-text1 h1{
+        font-size: 26px;
+        font-weight: 600;
+    }
+
     .testemunhos-text1 p{
         padding: 0;
     }
@@ -325,6 +389,7 @@
         font-size: 26px;
         color: #333333;
         margin-bottom: 40px;
+        font-weight: 600;
     }
     
     .contato-box .box:nth-child(2),

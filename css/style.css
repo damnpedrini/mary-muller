@@ -218,6 +218,10 @@ main .container > *:not(.main-img) {
     margin: 0;
 }
 
+.botao-fundo{
+    display: none;
+}
+
 /* css section serviços */
 .servicos .container{
     display: flex;
@@ -316,8 +320,16 @@ main .container > *:not(.main-img) {
     padding: 4% 0 0 0;
 }
 
+.servicos-img-responsivo{
+    display: none;
+}
+
 .servicos-img img{
     width: 80%;
+}
+
+.servicos-responsivo{
+   display: none;
 }
 
 /* css metodos e estrategias*/
@@ -349,7 +361,8 @@ main .container > *:not(.main-img) {
     margin-right: auto; 
 }
 
-.metodos-text .metodos-display b{
+.metodos-text .metodos-display a b{
+    cursor: pointer;
     font-family: Poppins;
     font-size: 14px;
     font-weight: 400;
