@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
     navbarManager.init();
 
     const scrollManager = new ScrollManager();
-    const linkHandler = new LinkHandler('.navbar a[href^="#"]', scrollManager, 90);
+    const linkHandler = new LinkHandler('.navbar a[href^="#"]', scrollManager, 0);
     linkHandler.init();
 
     const menuIcon = document.querySelector('.menu-icon');
