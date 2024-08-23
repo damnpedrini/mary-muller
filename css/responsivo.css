@@ -216,6 +216,7 @@
 
     .servicos-img-responsivo img{
         width: 100%;
+        border-radius: 20px;
     }
 
     .servicos-responsivo{
