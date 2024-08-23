@@ -120,14 +120,14 @@
 
     .main-horario h2 {
         margin-top: 10px;
-        font-size: 20px;
-        font-weight: 600;
+        font-size: 18px;
+        font-weight: 500;
     }
 
     .main-horario p{
         margin: 10px 0 10px 0;
-        font-size: 18px;
-        font-weight: 400;
+        font-size: 17px;
+        font-weight: 300;
     }
 
     .botao-fundo{
